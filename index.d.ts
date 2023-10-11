@@ -9,4 +9,5 @@ export declare class Pubsub {
   unsub (topic: topic | token | listener, listener?: listener): number;
 }
 
-export const pubsub: Pubsub;
+declare const _default: Pubsub;
+export default _default;
