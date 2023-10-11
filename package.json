@@ -1,6 +1,6 @@
 {
   "name": "@curiouser/pubsub",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Light wrapper around pubsub-js",
   "main": "./dist/index.js",
   "scripts": {
