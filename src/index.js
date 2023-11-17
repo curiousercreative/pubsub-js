@@ -156,7 +156,10 @@ export class Pubsub {
   }
 }
 
-const _global = typeof window === 'object' ? window : global;
+const _global =
+  (typeof window === 'object' && window)
+  || (typeof global === 'object' && global)
+  || {};
 _global.pubsub = _global.pubsub || new Pubsub();
 
 export default _global.pubsub;
